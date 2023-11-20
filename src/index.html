@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      class="weater-title container max-w-3xl mt-36 flex flex-wrap gap-3"
+      id="boxLoad"
+    >
+      <h1 class="w-full font-bold text-2xl">Wetter-App</h1>
+      <div class="weater-input-form flex justify-between w-full gap-2">
+        <input
+          type="text"
+          placeholder="Gib eine Stadt ein"
+          class="w-full rounded-tl-md rounded-bl-md placeholder:pl-2 pl-2 border-slate-300 border"
+          id="inputValue"
+        />
+        <button
+          class="bg-blue-400 px-1 text-sm py-1 font-bold rounded-tr-md rounded-br-md text-white"
+          id="send"
+          onclick="sendValue()"
+        >
+          Wetter abrufen
+        </button>
+      </div>
+      <!-- box-1 -->
+      <!-- <div
+        class="box-load shadow-md shadow-slate-300 border-2 border-slate-100 rounded-md w-[49%] pl-2 py-2"
+      >
+        <div class="title flex justify-between w-full pr-2">
+          <h1 class="font-bold">${data.location.name}</h1>
+          <span class="">aaa</span>
+        </div>
+        <span class="text-slate-500 font-bold">15°C</span>
+        <br />
+        <span class="text-slate-400 text-sm">Partly cloundy</span>
+      </div> -->
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
